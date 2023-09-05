@@ -1,0 +1,335 @@
+
+
+/* CONTEUDO DE TODO SITE */
+
+html, body {
+    overflow: hidden; /* Remove as barras de rolagem vertical e horizontal */
+    height: 100%; /* Garante que o conteúdo ocupe toda a altura da janela */
+}
+
+
+.header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999;
+  display: flex; /* Torna o cabeçalho um container flexível */
+ 
+}
+
+.header-content {
+  flex: 1; /* Ocupa todo o espaço disponível no cabeçalho */
+
+}
+
+.conteudo {
+    background-color: #222222; /* Cor de fundo desejada */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Certifica-se de que está na parte superior */
+    padding: 300px 100px;
+}
+
+
+h1 {
+    color: #fff;
+    font-family: 'cebo';
+    font-size: 20px;
+    
+}
+
+@font-face {
+    font-family:'cebo' ;
+    src: url(./fonts/cebo.ttf);
+}
+
+
+h3 {
+  color: #fff;
+  font-family: 'Segoe UI Black';
+  font-size: 65px;
+  margin-bottom: 30px; /* Ajuste o valor conforme necessário */
+}
+
+p {
+    color: #ffffff;
+    font-family: 'Rubik';
+    font-size: 17px;
+    margin-top: 0px; /* Ajuste o valor conforme necessário */
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaçamento igual entre os elementos */
+    margin-bottom: 15px; /* Ajuste o valor conforme necessário */
+    text-align: center;
+    position: relative;
+}
+
+.botoes {
+    text-align: center; /* Centraliza o conteúdo do div */
+    
+}
+
+.imagem  {
+    max-width: 110%;
+    z-index: 1;
+    height: auto;
+    margin-left: auto; /* Move todas as imagens para a direita */
+    display: flex;
+    justify-content: flex-end; /* Alinha todos os elementos à direita */
+}
+
+.oculto {
+  display: none;
+}
+
+.exibir {
+  display: block;
+  z-index: 1;
+  height: auto;
+  top: 250px; /* Centraliza verticalmente */
+  left: 650px; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Centraliza horizontal e verticalmente */
+  position: absolute; /* Permite o uso de top e left */
+}
+
+
+
+
+
+
+.botoes {
+    text-align: right; /* Alinha os botões à direita */
+    position: absolute; /* Posiciona os botões de forma absoluta */
+    top: 570px; /* Coloca os botões no topo da página */
+    right: 1582px; /* Coloca os botões à direita da página */
+    z-index: 1000; /* Certifica-se de que os botões estão acima de outros elementos */
+}
+
+/* Estilização para os botões dentro da classe "botoes" */
+.botoes button {
+    font-family: "Segoe UI Black"; /* Use a fonte personalizada com alternativa genérica */
+    background-color: #960020;
+    color: #3f0b25; /* Cor do texto branca */
+    border: none;
+    cursor: pointer;
+    padding: 8px 50px;
+    display: block; /* Faz com que os botões ocupem toda a largura disponível */
+    transition: transform 0.2s ease-in-out;
+   
+}
+
+  
+.buttonstart {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-right: 90px;
+  margin-top: 13px;
+  float: right;
+}
+
+.buttonstart .line {
+  width: 30px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  margin: 5px 0;
+  text-align: right;
+}
+
+.buttonstart:focus {
+  outline: none;
+}
+
+  
+/* VOLTA AO INICIO (MENU) */
+
+
+
+
+
+
+
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #602234; /* Cor de fundo do menu */
+    padding: 20px; /* Espaçamento interno do menu */
+    box-shadow: 0px 0px 10px rgb(255, 255, 255); /* Adicione sombra para o menu */
+  
+    z-index: 1000; /* Para garantir que o menu fique acima de tudo */
+    overflow: hidden; /* Remova a rolagem do conteúdo */
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #ffffff; /* Cor do texto do menu */
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .closertitle {
+    font-size: 20px;
+    margin-left: 92px;
+    font-family: "cebo";
+    margin-top: 40px;
+    color: white; /* Adicione a propriedade color com a cor branca */
+    margin-top: 100px; 
+  }
+  
+  
+  
+  /* Animação para fechar o menu gradualmente */
+  @keyframes closeMenuAnimation {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+  }
+  
+  
+  .menu.closing {
+    animation: closeMenuAnimation 0.5s forwards;
+  }
+  
+
+
+
+  
+  /* BOTÃO DO MENU */
+  
+
+
+
+
+  #buttonclose {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 125px; /* Ajuste a posição vertical conforme necessário */
+    right: 200px; /* Ajuste a posição horizontal conforme necessário */
+  }
+  
+  
+  #buttonclose .line {
+    width: 30px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+  }
+  
+  
+  #buttonclose:focus {
+    outline: none;
+  }
+  
+  
+  
+  
+  /* GUIAS DO MENU */
+  
+
+
+
+
+  .menu p {
+    font-family: 'DejaVu Sans Light', sans-serif; /* Aplicar a fonte 'Adelaide-Regular' aos elementos <p> */
+    font-weight: 100; /* Defina o peso da fonte como thin (leve) */
+    margin: 0; /* Remover margens padrão dos parágrafos */
+  }
+  
+  .menu a {
+    font-family: 'DejaVu Sans Light', sans-serif;
+    font-weight: 100;
+    font-size: 100px; /* Aumente o tamanho da fonte para 50px */
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
+  }
+  
+  
+  /* Adicionar espaçamento entre as palavras */
+  .menu-items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ocupar toda a altura do menu */
+    word-spacing: 10px; /* Adicionar espaçamento entre as palavras */
+  }
+  
+  
+  /* Estilizar a <div class="guias"> */
+  .guias {
+    display: flex;
+    flex-direction: row; /* Altera a direção para uma linha */
+    align-items: flex-start; /* Alinha as palavras ao topo */
+    height: 100%;
+    padding-left: 80px;
+    margin-top: 5px;
+  }
+  
+  .guias a {
+    font-family: 'DejaVu Sans Light', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    color: #ffffff;
+    margin: 0;
+    white-space: nowrap;
+    padding: 350px 15px; /* Ajusta o espaçamento acima e abaixo */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .guias a:hover {
+    transform: perspective(800px) rotateY(40deg);
+  }
+  
+  /* DUVIDAS */ 
+  
+  /* Estilos para o botão "Voltar ao Início" */
+  #voltarInicio {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #602234;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #voltarInicio:hover {
+    background-color: #801c4f;
+  }
