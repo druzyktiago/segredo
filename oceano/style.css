@@ -1,0 +1,414 @@
+  
+/* REDIRECIONAMENTO DO CONTEUDO */
+
+
+body {
+    overflow: hidden;
+}
+
+.titulo {
+    font-size: 15px;
+    margin-left: 15px; /* Remove a margem esquerda */
+    margin-right: 0; /* Remove a margem direita */
+    font-family: "cebo";
+    margin-top: 25px;
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  @font-face {
+  
+    font-family: "cebo"; /* Nome da fonte que você usará */
+    src: url("./afundo/fonts/cebo.ttf"); /* Substitua pelo caminho real do arquivo de fonte */
+  
+  }
+  
+  /* Media queries para ajustes em telas menores */
+  @media (max-width: 768px) {
+    .inicio {
+      flex-direction: column; /* Altera para empilhar os elementos verticalmente */
+      text-align: center; /* Centraliza o texto */
+    }
+  
+    .buttonstart {
+      margin-top: 20px; /* Aumenta a margem no topo do botão em telas menores */
+    }
+  
+    .title {
+      margin: 25px 0; /* Aumenta a margem superior e inferior do título em telas menores */
+    }
+  }
+  
+  /* Estilos para o texto */
+  .centered-text {
+    font-family: 'Gill Sans MT';
+    font-size: 40px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 100px; /* Ajusta a margem superior */
+    /* Outros estilos que você queira aplicar */
+  }
+
+/* Defina a fonte personalizada usando @font-face */
+@font-face {
+    font-family: "Lato-Regular"; /* Nome da fonte */
+    src: url("./afundo/fonts/Lato-Regular.ttf") format("opentype"); /* Caminho para o arquivo de fonte e formato */
+}
+
+.outros {
+    background-color: #e7e7e7;
+    color: #000000;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: -20px; Remova essa linha para manter o cabeçalho no topo */
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 10px;
+    overflow: hidden; /* Adicione o overflow hidden apenas aqui */
+}
+
+  
+  /* Estilos para o botão que se parece com as linhas */
+  .buttonstart {
+    border: none; /* Remove a borda padrão do botão */
+    background: none; /* Remove o fundo padrão do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-right: 110px; /* Adiciona margem à direita do botão */
+    margin-top: 30px; /* Aumenta a margem superior */
+  }
+  
+  
+  .buttonstart .line {
+  
+    width: 30px; /* Ajusta o tamanho das linhas */
+    height: 1px; /* Altura das linhas */
+    background-color: rgb(0, 0, 0);
+    margin: 5px 0; /* Espaçamento entre as linhas */
+    text-align: right; /* Alinha o texto à esquerda */
+  
+  }
+  
+  .buttonstart:focus {
+  
+    outline: none; /* Remove a borda de foco ao clicar no botão */
+  
+  }
+
+
+/* Estilização para h3 dentro de .opcao-container */
+.opcao-container h3 {
+    font-size: 25px;
+    font-family: "Yu Gothic UI Light"; /* Use a fonte personalizada */
+    color: #3d3d3d; /* Cor do texto */
+    margin-bottom: 10px; /* Remove a margem inferior para alinhar a primeira letra */
+    line-height: 1.4; /* Define a altura da linha para alinhar a primeira letra */
+}
+
+/* Estilização para p dentro de .opcao-container */
+.opcao-container p {
+    font-family: "HP Simplified"; /* Use a fonte personalizada */
+    color: #757575; /* Cor do texto */
+    margin-top: 5px; /* Adiciona um pequeno espaço entre h3 e p */
+    flex-grow: 1; /* Permite que o parágrafo ocupe todo o espaço disponível */
+}
+
+.meio {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 800px; /* Define a largura máxima do conteúdo */
+    padding: 20px;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+}
+
+
+.opcao-container {
+    margin-bottom: 20px; /* Adiciona espaço entre as opções */
+}
+
+.botoes {
+  text-align: right; /* Alinha os botões à direita */
+  position: absolute; /* Posiciona os botões de forma absoluta */
+  top: 345px; /* Coloca os botões no topo da página */
+  right: 800px; /* Coloca os botões à direita da página */
+}
+
+/* Estilização para os botões dentro da classe "botoes" */
+.botoes button {
+  font-family: "Lato-Regular"; /* Use a fonte personalizada */
+  background-color: #602234;
+  color: #fff; /* Cor do texto branca */
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 30px;
+  margin-bottom: 55px; /* Espaço entre os botões */
+  display: block; /* Faz com que os botões ocupem toda a largura disponível */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Estilos para a animação de hover */
+.botoes button:hover {
+  transform: translateY(-5px); /* Move o botão para cima ao passar o mouse */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+
+/* Estilos para a animação de hover */
+.botoes button:hover {
+  transform: translateY(-5px); /* Move o botão para cima ao passar o mouse */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+/* Aplicar a fonte "Cascadia Code SemiLight" aos textos dentro da classe "objeto" */
+.objeto {
+    font-family: "Cascadia Code SemiLight";
+    color: #575555;
+}
+
+/* Estilo para o título h1 dentro da classe "objeto" */
+.objeto h1 {
+    font-size: 28px;
+    font-family: "Lato-Regular"; /* Use a fonte personalizada */
+    color: #3d3d3d; /* Cor do texto */
+    margin-bottom: 30px; /* Espaço abaixo do h1 */
+    line-height: 1.4; /* Define a altura da linha para alinhar a primeira letra */
+    margin-top: 20px;
+}
+
+/* Estilo para o subtítulo h2 dentro da classe "objeto" */
+.objeto h2 {
+    font-size: 22px; /* Tamanho da fonte para h2 */
+    font-family: "Lato-Regular"; /* Use a fonte personalizada */
+    color: #858484; /* Cor do texto */
+    margin-bottom: 10px; /* Espaço abaixo do h2 */
+    line-height: 1.4; /* Define a altura da linha para alinhar a primeira letra */
+    margin-bottom: 50px; /* Remove a margem inferior para alinhar a primeira letra */
+}
+
+
+/* Estilo para a linha separadora após o subtítulo h2 */
+.objeto h2::after {
+    content: ""; /* Adicionar conteúdo vazio */
+    display: block; /* Tornar a linha um elemento de bloco */
+    width: 100px; /* Largura da linha */
+    height: 2px; /* Altura da linha */
+    background-color: #eeebeb; /* Cor da linha */
+    position: absolute; /* Posição absoluta em relação ao subtítulo h2 */
+    bottom: -30px; /* Posiciona a linha 5 pixels acima da margem inferior do subtítulo h2 */
+    left: 0; /* Alinha a linha à esquerda do subtítulo h2 */
+}
+
+/* Estilo para o texto dentro de h3 */
+h3 {
+    font-size: 23px;
+    font-family: "Yu Gothic UI Light"; /* Use a fonte personalizada */
+    color: #3d3d3d; /* Cor do texto */
+  
+}
+
+p {
+    font-family: "HP Simplified"; /* Use a fonte personalizada */
+    color: #757575; /* Cor do texto */
+    margin-bottom:30px; /* Espaço abaixo do h3 */
+
+}
+
+
+
+
+
+
+
+
+/* VOLTA AO INICIO (MENU) */
+
+
+
+
+
+
+
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #602234; /* Cor de fundo do menu */
+    padding: 20px; /* Espaçamento interno do menu */
+    box-shadow: 0px 0px 10px rgb(255, 255, 255); /* Adicione sombra para o menu */
+  
+    z-index: 1000; /* Para garantir que o menu fique acima de tudo */
+    overflow: hidden; /* Remova a rolagem do conteúdo */
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #ffffff; /* Cor do texto do menu */
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .closertitle {
+    font-size: 20px;
+    margin-left: 92px;
+    font-family: "cebo";
+    margin-top: 40px;
+    color: white; /* Adicione a propriedade color com a cor branca */
+    margin-top: 100px; 
+  }
+  
+  
+  
+  /* Animação para fechar o menu gradualmente */
+  @keyframes closeMenuAnimation {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+  }
+  
+  
+  .menu.closing {
+    animation: closeMenuAnimation 0.5s forwards;
+  }
+  
+
+
+
+  
+  /* BOTÃO DO MENU */
+  
+
+
+
+
+  #buttonclose {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 125px; /* Ajuste a posição vertical conforme necessário */
+    right: 200px; /* Ajuste a posição horizontal conforme necessário */
+  }
+  
+  
+  #buttonclose .line {
+    width: 30px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+  }
+  
+  
+  #buttonclose:focus {
+    outline: none;
+  }
+  
+  
+  
+  
+  /* GUIAS DO MENU */
+  
+
+
+
+
+  .menu p {
+    font-family: 'DejaVu Sans Light', sans-serif; /* Aplicar a fonte 'Adelaide-Regular' aos elementos <p> */
+    font-weight: 100; /* Defina o peso da fonte como thin (leve) */
+    margin: 0; /* Remover margens padrão dos parágrafos */
+  }
+  
+  .menu a {
+    font-family: 'DejaVu Sans Light', sans-serif;
+    font-weight: 100;
+    font-size: 100px; /* Aumente o tamanho da fonte para 50px */
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
+  }
+  
+  
+  /* Adicionar espaçamento entre as palavras */
+  .menu-items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ocupar toda a altura do menu */
+    word-spacing: 10px; /* Adicionar espaçamento entre as palavras */
+  }
+  
+  
+  /* Estilizar a <div class="guias"> */
+  .guias {
+    display: flex;
+    flex-direction: row; /* Altera a direção para uma linha */
+    align-items: flex-start; /* Alinha as palavras ao topo */
+    height: 100%;
+    padding-left: 80px;
+    margin-top: 5px;
+  }
+  
+  .guias a {
+    font-family: 'DejaVu Sans Light', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    color: #ffffff;
+    margin: 0;
+    white-space: nowrap;
+    padding: 350px 15px; /* Ajusta o espaçamento acima e abaixo */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .guias a:hover {
+    transform: perspective(800px) rotateY(40deg);
+  }
+  
+  /* DUVIDAS */ 
+  
+  /* Estilos para o botão "Voltar ao Início" */
+  #voltarInicio {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #602234;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #voltarInicio:hover {
+    background-color: #801c4f;
+  }
