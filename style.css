@@ -7,7 +7,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #602234;
+  background-color: #3a3a3a;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +21,7 @@
 
 .loading-content {
   display: flex;
-  align-items: center;
+  align-items: center;  
 }
 
 .loading-screen.hidden {
@@ -65,16 +65,16 @@
 
 
 body, html {
-  margin: 0px;
-  padding: 0px;
  
-  overflow: hidden; /* Evita a barra de rolagem */
-}
-
+    height: 120%; 
+    width: 100%;
+    margin: 0; /* Remova a margem padrão do corpo */
+    padding: 0; /* Remova o padding padrão do corpo */
+  }
 
 
 .inicio {
-  background-color: #602234;
+  background-color: #3a3a3a;
   color: #ffffff;
   padding: 20px;
   display: flex;
@@ -226,7 +226,37 @@ body, html {
   font-family: 'Microsoft JhengHei', sans-serif; /* Aplicando a fonte */
 }
 
+.botoes {
+  text-align: right; /* Alinha os botões à direita */
+  position: absolute; /* Posiciona os botões de forma absoluta */
+  top: 800px; /* Coloca os botões no topo da página */
+  right: 820px; /* Coloca os botões à direita da página */
+  
+}
 
+/* Estilização para os botões dentro da classe "botoes" */
+.botoes button {
+  font-family: "Segoe UI Black"; /* Use a fonte personalizada com alternativa genérica */
+  background-color: #d8c200;
+  color: #333; /* Cor do texto branca */
+  border: none;
+  cursor: pointer;
+  padding: 8px 50px;
+  display: block; /* Faz com que os botões ocupem toda a largura disponível */
+  transform: translateY(-5px); /* Move o botão para cima ao passar o mouse */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Adiciona transições suaves */
+
+  /* Efeito 3D */
+  perspective: 1000px; /* Define a perspectiva para criar o efeito 3D */
+}
+
+.botoes button:hover {
+  transform: translateY(-10px) translateZ(10px); /* Move o botão para cima e para frente */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra mais pronunciada */
+}
+
+      
 
 /* MENU */ 
 
@@ -237,7 +267,7 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #602234; /* Cor de fundo do menu */
+  background-color: #3a3a3a; /* Cor de fundo do menu */
   padding: 20px; /* Espaçamento interno do menu */
   z-index: 999; /* Para garantir que o menu fique acima de tudo */
   overflow: hidden; /* Remova a rolagem do conteúdo */
@@ -355,12 +385,14 @@ body, html {
   margin: 0;
   white-space: nowrap;
   padding: 350px 15px; /* Ajusta o espaçamento acima e abaixo */
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Adiciona transição de cor */
 }
 
 .guias a:hover {
   transform: perspective(800px) rotateY(40deg);
+  color: gold; /* Muda a cor do texto para dourado */
 }
+
 
 /* DUVIDAS */ 
 
@@ -368,7 +400,7 @@ body, html {
 #voltarInicio {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #602234;
+  background-color: #3a3a3a;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -376,8 +408,10 @@ body, html {
 }
 
 #voltarInicio:hover {
-  background-color: #801c4f;
+  background-color: #3a3a3a;
 }
+
+
 
 /* Estilo para o conteúdo principal (ajuste conforme necessário) */
 .conteudo {
@@ -428,6 +462,8 @@ body, html {
   font-size: 20px;
   color: white;
 }
+
+
 
 
 
