@@ -28,6 +28,21 @@ var interval = setInterval(function() {
 }, intervalTime);
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const botaoEndereco = document.getElementById("botaoEndereco");
+
+  botaoEndereco.addEventListener("click", scrollToBottom);
+
+  function scrollToBottom() {
+    const enderecoElement = document.getElementById("endereco");
+    if (enderecoElement) {
+      enderecoElement.scrollIntoView({
+        behavior: "smooth", // Adiciona uma animação de rolagem suave
+        block: "end", // Rola para o final do elemento
+      });
+    }
+  }
+});
 
 
 //MENU
@@ -67,8 +82,4 @@ function closeMenu() {
 document.querySelector(".buttonstart").addEventListener("click", openMenu);
 document.querySelector("#buttonclose").addEventListener("click", closeMenu);
 
-// DUVIDAS
 
-document.getElementById("voltarInicio").addEventListener("click", function() {
-  window.location.href = "seu-link-para-inicio"; // Substitua pelo link correto
-});
