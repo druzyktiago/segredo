@@ -5,6 +5,7 @@
 html, body {
     overflow: hidden; /* Remove as barras de rolagem vertical e horizontal */
     height: 100%; /* Garante que o conteúdo ocupe toda a altura da janela */
+    width: 100%;
 }
 
 
