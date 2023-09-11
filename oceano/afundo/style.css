@@ -78,8 +78,8 @@ p {
 .imagem  {
     width: 100%;
     z-index: 1;
-    height: auto;
-    margin-left: 46%; /* Move todas as imagens para a direita */
+    height: 100%;
+    margin-left: 45%; /* Move todas as imagens para a direita */
     display: flex;
     justify-content: flex-end; /* Alinha todos os elementos à direita */
 }
