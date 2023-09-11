@@ -2,94 +2,88 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartório de Imóveis-Campo Largo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Outros</title>
+   
 </head>
 <body>
 
-<!-- REDIRECIONAMENTO DO CONTEUDO -->
+   
 
-<header class="outros">
+    <!-- TELA DE CARREGAMENTO -->
 
-    <div class="titulo">
+    <div class="loading-screen">
+        <p class="mary">MARIA RENATA SETTI DE PAULI</p>
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="conteudo">
+
+ <!-- PÁGINA PRINCIPAL -->
+
+<header class="inicio">
+    <div class="title">
         <h1>REGISTRO DE IMÓVEIS</h1>
         <h2>Campo Largo</h2>
     </div>
    
     <div class="buttonstart" onclick="openMenu()">
-
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
-
     </div>
-
 </header>
+<div class="centered-text">
+    <p class="gill-sans">Por quê fazemos isso?</p>
+</div>
 
-   
-<!-- POSSIVEIS ESCOLHAS -->
-
-
-<div class="meio">
-    <div class="objeto">
-        <h1>SERVIÇOS</h1>
-        <h2 id="segundo">SELECIONE A OPÇÃO</h2>
+<div class="image-row">
+    <div class="image-container">
+        <div class="circle">
+            <img src="./oceano/afundo/imagens/casa.png" alt="Descrição da Imagem">
+        </div>
+        <h3>Missão</h3><br>
+        <p>Prestar serviços de registro de imóveis com eficácia, agilidade <br> e segurança jurídica, contribuindo assim para a satisfação dos usuários.</p>
     </div>
 
-    <div class="opcoes">
-        <div class="opcao-container">
-            <h3>Certidão Digital</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <div class="image-container">
+        <div class="circle">
+            <img src="./oceano/afundo/imagens/equilibrio.png" alt="Equilíbrio">
         </div>
-
-        <div class="opcao-container">
-            <h3>Pesquisa qualificada</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
-        <div class="opcao-container">
-            <h3>Central Eletrônica</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
-        <div class="opcao-container">
-            <h3>Usucapião</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+        <h3>Valores</h3><br>
+        <p>Ética na execução dos serviços;
+            Transparência nas ações;<br>
+            Comprometimento com a satisfação dos usuários; <br>
+            Respeito ao próximo; Aprimoramento contínuo.</p>
     </div>
+
+
+    <div class="image-container">
+        <div class="circle">
+            <img src="./oceano/afundo/imagens/realidade-virtual.png" alt="Realidade Virtual">
+        </div>
+        <h3>Propósito</h3><br>
+        <p>Ser reconhecido na sociedade pela excelência <br> nos serviços prestados.</p>
+    </div>
+
 </div>
 
-<div class="botoes">
-    <button>APPLY</button>
-    <button>APPLY</button>
-    <button>APPLY</button>
-    <button>APPLY</button>
 </div>
 
-<div class="botoes">
-    <button onclick="ocultarConteudo()">APPLY</button>
-</div>
-
-<div class="botoes">
-    <button onclick="redirecionarParaConteudo()">APPLY</button>
-</div>
-
-
-
-
-
-
-    <!-- VOLTA AO INICIO (MENU) -->
-
-
+<!-- MENU -->
 <div class="menu" id="menu">
     <div class="closertitle">
         <h2>REGISTRO DE IMÓVEIS</h2>
     </div>
 
-    <div class="guias">
+    <div class="guias" id="outros">
         <a href="/index.html"><h4>início</h4></a>
+        <a href="duvidas.html"><h4>dúvidas</h4></a>
+        <a href="sobre.html"><h4>sobre</h4></a>
+        <a href="./oceano/index.html"><h4>outros</h4></a>
+      
     </div>
 
 
@@ -99,10 +93,48 @@
         <div class="line"></div>
     </div>
 </div>
+<div id="endereco">
+<div class="botoes">
+    <button id="botaoEndereco">QUERO IR PRESENCIALMENTE</button>
+</div>
 
-<script src="outros.js"></script>
+
+<footer class="rodape" id="contato">
+    <div class="rodape-div">
+
+        <div class="rodape-div-1">
+            <div class="rodape-div-1-coluna">
+                <!-- elemento -->
+                <span><b>ENDEREÇO</b></span>
+                <p>Avenida Desembargador Clotário Portugal, 421 - CEP: 83601-320 <br>
+                    Campo Largo - PR</p>
+            </div>
+        </div>
+
+        <div class="rodape-div-2">
+            <div class="rodape-div-2-coluna">
+                <!-- elemento -->
+                <span><b>HORÁRIO DE ATENDIMENTO</b></span>
+                <p>Segunda a sexta 08:30 às 11:00 e 13:00 às 17:00</p>
+            </div>
+        </div>
+       
+        <div class="rodape-div-4">
+            <div class="rodape-div-4-coluna">
+                <!-- elemento -->
+                <span><b>CONTATO</b></span>
+                <p>atendimento@cartoriocampolargo.com.br <br>
+                    (41) 3032-2675</p>
+            </div>
+        </div>
+        <p class="rodape-direitos">Serviço de Registro de Imóveis de Campo Largo - 2023 - Todos os direitos reservados</p>
+       
+    </div>
+    
+</footer>
+</div>
+    <script src="inicio.js"></script>
 
 </body>
-
 </html>
 
