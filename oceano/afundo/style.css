@@ -9,7 +9,7 @@ html, body {
 
 
 .header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #3a3a3a;
   padding: 20px;
   color: white;
   position: fixed;
@@ -27,7 +27,7 @@ html, body {
 }
 
 .conteudo {
-    background-color: #222222; /* Cor de fundo desejada */
+    background-color: #ffffff; /* Cor de fundo desejada */
     position: fixed;
     top: 0;
     left: 0;
@@ -39,7 +39,7 @@ html, body {
 
 
 h1 {
-    color: #fff;
+    color: #ffffff;
     font-family: 'cebo';
     font-size: 20px;
     
@@ -52,14 +52,14 @@ h1 {
 
 
 h3 {
-  color: #fff;
+  color: #333;
   font-family: 'Segoe UI Black';
   font-size: 65px;
   margin-bottom: 30px; /* Ajuste o valor conforme necessário */
 }
 
 p {
-    color: #ffffff;
+    color: #333;
     font-family: 'Rubik';
     font-size: 17px;
     margin-top: 0px; /* Ajuste o valor conforme necessário */
@@ -80,7 +80,7 @@ p {
 }
 
 .imagem  {
-    max-width: 100%;
+    max-width: 110%;
     z-index: 1;
     height: auto;
     margin-left: 53%; /* Move todas as imagens para a direita */
@@ -108,24 +108,33 @@ p {
 
 
 .botoes {
-    text-align: right; /* Alinha os botões à direita */
-    position: absolute; /* Posiciona os botões de forma absoluta */
-    top: 570px; /* Coloca os botões no topo da página */
-    right: 1582px; /* Coloca os botões à direita da página */
-    z-index: 1000; /* Certifica-se de que os botões estão acima de outros elementos */
+  text-align: right; /* Alinha os botões à direita */
+  position: absolute; /* Posiciona os botões de forma absoluta */
+  top: 570px; /* Coloca os botões no topo da página */
+  right: 1582px; /* Coloca os botões à direita da página */
+  z-index: 1000; /* Certifica-se de que os botões estão acima de outros elementos */
 }
 
 /* Estilização para os botões dentro da classe "botoes" */
 .botoes button {
-    font-family: "Segoe UI Black"; /* Use a fonte personalizada com alternativa genérica */
-    background-color: #960020;
-    color: #3f0b25; /* Cor do texto branca */
-    border: none;
-    cursor: pointer;
-    padding: 8px 50px;
-    display: block; /* Faz com que os botões ocupem toda a largura disponível */
-    transition: transform 0.2s ease-in-out;
-   
+  font-family: "Segoe UI Black"; /* Use a fonte personalizada com alternativa genérica */
+  background-color: #d8c200;
+  color: #333; /* Cor do texto branca */
+  border: none;
+  cursor: pointer;
+  padding: 8px 50px;
+  display: block; /* Faz com que os botões ocupem toda a largura disponível */
+  transform: translateY(-5px); /* Move o botão para cima ao passar o mouse */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Adiciona transições suaves */
+
+  /* Efeito 3D */
+  perspective: 1000px; /* Define a perspectiva para criar o efeito 3D */
+}
+
+.botoes button:hover {
+  transform: translateY(-10px) translateZ(10px); /* Move o botão para cima e para frente */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra mais pronunciada */
 }
 
   
@@ -167,7 +176,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #602234; /* Cor de fundo do menu */
+    background-color: #3a3a3a; /* Cor de fundo do menu */
     padding: 20px; /* Espaçamento interno do menu */
     box-shadow: 0px 0px 10px rgb(255, 255, 255); /* Adicione sombra para o menu */
   
@@ -315,6 +324,7 @@ p {
   
   .guias a:hover {
     transform: perspective(800px) rotateY(40deg);
+    color: gold; /* Muda a cor do texto para dourado */
   }
   
   /* DUVIDAS */ 
@@ -323,7 +333,7 @@ p {
   #voltarInicio {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #602234;
+    background-color: #3a3a3a;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -331,5 +341,5 @@ p {
   }
   
   #voltarInicio:hover {
-    background-color: #801c4f;
+    background-color: #3a3a3a;
   }
