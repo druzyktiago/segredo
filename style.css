@@ -379,6 +379,59 @@ body, html {
   background-color: #801c4f;
 }
 
+/* Estilo para o conteúdo principal (ajuste conforme necessário) */
+.conteudo {
+  min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos a altura da janela de visualização */
+}
+
+/* Estilo para o rodapé */
+.rodape {
+  background-color: #000000;
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  height: 50vh;
+}
+
+/* Estilo para links no rodapé */
+.rodape a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilo para parágrafos no rodapé */
+.rodape p {
+  margin-bottom: 5px;
+}
+
+/* Estilo para o contêiner principal do rodapé */
+.rodape-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  justify-content: center; /* Centralize os elementos horizontalmente */
+  padding: 60px 10px 60px 10px; /* Ajuste o espaçamento conforme necessário */
+}
+
+/* Estilo para as três colunas dentro do rodapé */
+.rodape-div-1, .rodape-div-2, .rodape-div-3 {
+  display: flex;
+  width: calc(100% / 3 - 20px); /* Ajuste o número de colunas conforme necessário */
+  padding: 10px 0; /* Remova o espaçamento interno à direita e à esquerda */
+}
+
+/* Estilo para os spans dentro do rodapé */
+.rodape span {
+  font-size: 20px;
+  color: white;
+}
+
+
+
+
 
 
 
