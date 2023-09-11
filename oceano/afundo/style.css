@@ -4,7 +4,7 @@
 
 html, body {
     overflow: hidden; /* Remove as barras de rolagem vertical e horizontal */
-    height: 100%; /* Garante que o conteúdo ocupe toda a altura da janela */
+    height: 110%; /* Garante que o conteúdo ocupe toda a altura da janela */
     width: 100%;
 }
 
@@ -30,8 +30,6 @@ html, body {
 .conteudo {
     background-color: #ffffff; /* Cor de fundo desejada */
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     z-index: 1; /* Certifica-se de que está na parte superior */
@@ -67,7 +65,9 @@ p {
 }
 
 .container {
+
     display: flex;
+    
 }
 
 .botoes {
