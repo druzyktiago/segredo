@@ -82,13 +82,14 @@ body, html {
   top: 0px;
   left: 0px;
   overflow: hidden; /* Adicione o overflow hidden apenas aqui */
+  
 }
 
 .buttonstart {
   border: 2px solid #d8c200; /* Define a borda vermelha */
   border-radius: 20px; /* Define o raio da borda para torná-la redonda */
   cursor: pointer; /* Transforma o cursor em uma mão ao passar o mouse */
-  margin-left: 1280px; /* Adiciona margem à direita do botão */
+  margin-left: 1250px; /* Adiciona margem à direita do botão */
   margin-top: 5px; /* Aumenta a margem superior */
   width: 153px; /* Defina a largura desejada */
   height: 35px; /* Defina a altura desejada */
@@ -102,8 +103,9 @@ body, html {
 }
 
 .buttonstart:hover {
-  transform: translateY(-5px); /* Move o botão 5 pixels para cima no hover */
+  transform: translateY(-10px); /* Move o botão 5 pixels para cima no hover */
 }
+
 
 
 
@@ -126,10 +128,15 @@ body, html {
 
 .title {
   font-size: 15px;
-  margin-left: 5px; /* Remove a margem esquerda */
+  margin-left: 25px; /* Remove a margem esquerda */
   margin-right: 0; /* Remove a margem direita */
   font-family: "cebo";
   margin-top: 1px;
+}
+
+/* Estilos para a logo */
+.logo {
+  margin-left: 20px; /* Adicione margem direita para afastar a logo da borda */
 }
 
 
@@ -234,7 +241,7 @@ body, html {
 .botoes {
   text-align: right; /* Alinha os botões à direita */
   position: absolute; /* Posiciona os botões de forma absoluta */
-  top: 870px; /* Coloca os botões no topo da página */
+  top: 850px; /* Coloca os botões no topo da página */
   right: 30px; /* Coloca os botões à direita da página */
   
 }
@@ -245,7 +252,7 @@ body, html {
   background-color: #d8c200;
   color: #333333da; /* Cor do texto branca */
   border: none;
-  border-radius: 0px;
+  border-radius: 20px;
   cursor: pointer;
   padding: 8px 20px;
   display: block; /* Faz com que os botões ocupem toda a largura disponível */
