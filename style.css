@@ -66,7 +66,7 @@
 
 body, html {
  
-    height: 100%; 
+    height: 50%; 
     width: 100%;
     margin: 0; /* Remova a margem padrão do corpo */
     padding: 0; /* Remova o padding padrão do corpo */
@@ -84,14 +84,27 @@ body, html {
   overflow: hidden; /* Adicione o overflow hidden apenas aqui */
 }
 
-/* Estilos para o botão que se parece com as linhas */
 .buttonstart {
-  border: none; /* Remove a borda padrão do botão */
-  background: none; /* Remove o fundo padrão do botão */
-  cursor: pointer; /* Muda o cursor para indicar que é clicável */
-  margin-left: 1300px; /* Adiciona margem à direita do botão */
+  border: 2px solid #d8c200; /* Define a borda vermelha */
+  border-radius: 20px; /* Define o raio da borda para torná-la redonda */
+  cursor: pointer; /* Transforma o cursor em uma mão ao passar o mouse */
+  margin-left: 1280px; /* Adiciona margem à direita do botão */
   margin-top: 5px; /* Aumenta a margem superior */
+  width: 153px; /* Defina a largura desejada */
+  height: 35px; /* Defina a altura desejada */
+  font-family: "Segoe UI Black"; /* Use a fonte personalizada com alternativa genérica */
+  font-size: 11px;
+  text-align: center; /* Centraliza horizontalmente o texto */
+  line-height: 31.5px; /* Centraliza verticalmente o texto */
+  background: linear-gradient(to bottom, #f3db01 0%, #d8c200 100%); /* Gradiente de cores para o botão */
+  color: #333; /* Cor do texto */
+  transition: transform 0.2s ease-in-out; /* Adiciona uma transição suave ao efeito de elevação */
 }
+
+.buttonstart:hover {
+  transform: translateY(-5px); /* Move o botão 5 pixels para cima no hover */
+}
+
 
 
 .buttonstart .line {
@@ -162,12 +175,6 @@ body, html {
 
 /* IMAGENS */
 
-.image-row {
-  display: flex; /* Usar flexbox para organizar elementos lado a lado */
-  justify-content: center; /* Centralizar horizontalmente os elementos */
-  align-items: center; /* Centralizar verticalmente os elementos */
-  margin-top: 100px; /* Espaçamento entre a imagem anterior e esta linha */
-}
 
 .image-container {
   flex: 1; /* Distribui o espaço igualmente entre as duas imagens */
@@ -201,7 +208,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 230px;
 }
 
 .image-container {
@@ -227,8 +234,8 @@ body, html {
 .botoes {
   text-align: right; /* Alinha os botões à direita */
   position: absolute; /* Posiciona os botões de forma absoluta */
-  top: 800px; /* Coloca os botões no topo da página */
-  right: 800px; /* Coloca os botões à direita da página */
+  top: 870px; /* Coloca os botões no topo da página */
+  right: 30px; /* Coloca os botões à direita da página */
   
 }
 
@@ -236,13 +243,14 @@ body, html {
 .botoes button {
   font-family: "Segoe UI Black"; /* Use a fonte personalizada com alternativa genérica */
   background-color: #d8c200;
-  color: #333; /* Cor do texto branca */
+  color: #333333da; /* Cor do texto branca */
   border: none;
+  border-radius: 0px;
   cursor: pointer;
-  padding: 8px 50px;
+  padding: 8px 20px;
   display: block; /* Faz com que os botões ocupem toda a largura disponível */
   transform: translateY(-5px); /* Move o botão para cima ao passar o mouse */
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+  box-shadow: 0px 5px 10px #00000094; /* Adiciona uma sombra */
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Adiciona transições suaves */
 
   /* Efeito 3D */
@@ -414,7 +422,7 @@ body, html {
 /* Estilo para o conteúdo principal (ajuste conforme necessário) */
 .conteudo {
  
-  height: 101vh; /* Garante que o conteúdo ocupe pelo menos a altura da janela de visualização */
+  height: 100vh; /* Garante que o conteúdo ocupe pelo menos a altura da janela de visualização */
 }
 
 /* Estilo para o rodapé */
@@ -423,7 +431,7 @@ body, html {
   padding: 0px; /* Ajuste o valor do padding-top conforme necessário */
   width: 100%;
   color: white;
-  height: 28h;
+  height: 25h;
   position: relative;
   display: flex;
   flex-direction: column; /* Para centralizar verticalmente o conteúdo */
@@ -444,7 +452,8 @@ body, html {
   font-family: "DejaVu Sans Condensed";
   font-size: 15px;
   margin-bottom: 0;
-  margin-left: 200px;
+  margin-left: 140px;
+  text-align: center;
 }
 
 /* Estilo para o contêiner principal do rodapé */
@@ -466,6 +475,7 @@ body, html {
   
 }
 
+
 /* Estilo para os spans dentro do rodapé */
 .rodape span {
 
@@ -473,10 +483,22 @@ body, html {
   color: rgb(122, 122, 122);
   font-family: "DejaVu Sans Condensed";
   margin-bottom: 1px; /* Adicione uma margem na parte inferior de cada <span> */
-  margin-left: 200px;
+  margin-left: 220px;
+ 
   
 }
 
+.rodape-div-1-coluna span {
+
+margin-left: 327px;
+
+}
+
+.rodape-div-3-coluna span {
+
+  margin-left: 248px;
+  
+  }
 
 /* Estilo para o parágrafo com a classe .rodapedireitos */
 .rodapedireitos {
@@ -484,7 +506,7 @@ body, html {
   background-color: #000000;
   color: #ffffff;
   font-size: 13px;
-  margin-right: 100px;
+  margin-right: 120px;
   padding-top: 40px;
   margin-bottom: 0;
 }
