@@ -76,9 +76,8 @@ body, html {
 .inicio {
   background-color: #3a3a3a;
   color: #ffffff;
-  padding: 20px;
+  padding: 1px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   top: 0px;
   left: 0px;
@@ -90,8 +89,8 @@ body, html {
   border: none; /* Remove a borda padrão do botão */
   background: none; /* Remove o fundo padrão do botão */
   cursor: pointer; /* Muda o cursor para indicar que é clicável */
-  margin-right: 110px; /* Adiciona margem à direita do botão */
-  margin-top: 8px; /* Aumenta a margem superior */
+  margin-left: 1300px; /* Adiciona margem à direita do botão */
+  margin-top: 5px; /* Aumenta a margem superior */
 }
 
 
@@ -114,11 +113,10 @@ body, html {
 
 .title {
   font-size: 15px;
-  margin-left: 15px; /* Remove a margem esquerda */
+  margin-left: 5px; /* Remove a margem esquerda */
   margin-right: 0; /* Remove a margem direita */
   font-family: "cebo";
-  margin-top: 8px;
-  text-align: left; /* Alinha o texto à esquerda */
+  margin-top: 1px;
 }
 
 
@@ -230,7 +228,7 @@ body, html {
   text-align: right; /* Alinha os botões à direita */
   position: absolute; /* Posiciona os botões de forma absoluta */
   top: 800px; /* Coloca os botões no topo da página */
-  right: 820px; /* Coloca os botões à direita da página */
+  right: 800px; /* Coloca os botões à direita da página */
   
 }
 
@@ -416,7 +414,7 @@ body, html {
 /* Estilo para o conteúdo principal (ajuste conforme necessário) */
 .conteudo {
  
-  height: 99vh; /* Garante que o conteúdo ocupe pelo menos a altura da janela de visualização */
+  height: 101vh; /* Garante que o conteúdo ocupe pelo menos a altura da janela de visualização */
 }
 
 /* Estilo para o rodapé */
@@ -425,7 +423,7 @@ body, html {
   padding: 0px; /* Ajuste o valor do padding-top conforme necessário */
   width: 100%;
   color: white;
-  height: 32.6vh;
+  height: 28h;
   position: relative;
   display: flex;
   flex-direction: column; /* Para centralizar verticalmente o conteúdo */
@@ -442,10 +440,11 @@ body, html {
 
 /* Estilo para parágrafos no rodapé */
 .rodape p {
-  margin-top: 50px; /* Adicione uma margem na parte superior de cada <p> */
+  margin-top: 30px; /* Adicione uma margem na parte superior de cada <p> */
   font-family: "DejaVu Sans Condensed";
   font-size: 15px;
   margin-bottom: 0;
+  margin-left: 200px;
 }
 
 /* Estilo para o contêiner principal do rodapé */
@@ -463,6 +462,8 @@ body, html {
   display: flex;
   width: calc(100% / 3 - 20px); /* Ajuste o número de colunas conforme necessário */
   padding: 10px 0; /* Remova o espaçamento interno à direita e à esquerda */
+  margin-left: 10px;
+  
 }
 
 /* Estilo para os spans dentro do rodapé */
@@ -471,7 +472,8 @@ body, html {
   font-size: 13px;
   color: rgb(122, 122, 122);
   font-family: "DejaVu Sans Condensed";
-  margin-bottom: 15px; /* Adicione uma margem na parte inferior de cada <span> */
+  margin-bottom: 1px; /* Adicione uma margem na parte inferior de cada <span> */
+  margin-left: 200px;
   
 }
 
@@ -482,9 +484,11 @@ body, html {
   background-color: #000000;
   color: #ffffff;
   font-size: 13px;
-  text-align: center;
-  margin-bottom: 2px;
+  margin-right: 100px;
+  padding-top: 40px;
+  margin-bottom: 0;
 }
+
 
 /* Adicione a linha branca no meio do rodapé usando um gradiente */
 .rodape::before {
@@ -497,6 +501,6 @@ body, html {
   height: 1px; /* Espessura da linha */
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
   z-index: 1;
-  margin-top: 70px;
+  margin-top: 80px;
 
 }
