@@ -155,14 +155,17 @@ body, html {
 }
 
 /* Media queries para ajustes em telas menores */
-@media (max-width: 768px) {
+@media (max-width: 1440px) and (max-width: 900px) {
+
   .inicio {
-    flex-direction: column; /* Altera para empilhar os elementos verticalmente */
     text-align: center; /* Centraliza o texto */
   }
 
   .buttonstart {
-    margin-top: 20px; /* Aumenta a margem no topo do botão em telas menores */
+
+    margin-top: 20px; 
+    margin-left: 500px;
+
   }
 
   .title {
