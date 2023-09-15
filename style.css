@@ -154,24 +154,6 @@ body, html {
 
 }
 
-/* Media queries para ajustes em telas menores */
-@media (max-width: 1440px) and (max-width: 900px) {
-
-  .inicio {
-    text-align: center; /* Centraliza o texto */
-  }
-
-  .buttonstart {
-
-    margin-top: 20px; 
-    margin-left: 500px;
-
-  }
-
-  .title {
-    margin: 25px 0; /* Aumenta a margem superior e inferior do título em telas menores */
-  }
-}
 
 
 /* Estilos para o texto */
