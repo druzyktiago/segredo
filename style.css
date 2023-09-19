@@ -169,6 +169,12 @@ font-size: 14px;
 
 }
 
+.image-container h3 {
+
+font-size: 15px;
+
+}
+
 }
 
 @media (max-width: 1280px) {
@@ -203,8 +209,14 @@ font-size: 14px;
     
     }
     
+    .image-container h3 {
+
+      font-size: 15px;
+      
+      }
 
 }
+
 
 }
 /* Estilos para a logo */
