@@ -135,7 +135,7 @@ body, html {
 }
 
 
-@media (min-width: 1300px) and (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1440px) {
 
   .title {
 
@@ -149,7 +149,7 @@ body, html {
 
   .buttonstart {
   
-    margin-left: 820px; /* Adiciona margem à direita do botão */
+    margin-left: 840px; /* Adiciona margem à direita do botão */
   
   }
 
@@ -159,7 +159,7 @@ body, html {
 
   .title {
 
-    font-size: 9px;
+    font-size: 10px;
     margin-left: 25px; /* Remove a margem esquerda */
     margin-right: 0; /* Remove a margem direita */
     font-family: "cebo";
@@ -169,7 +169,7 @@ body, html {
 
   .buttonstart {
   
-    margin-left: 715px; /* Adiciona margem à direita do botão */
+    margin-left: 718px; /* Adiciona margem à direita do botão */
   
   }
 
