@@ -134,6 +134,26 @@ body, html {
   margin-top: 1px;
 }
 
+@media (min-width: 500px) and (max-width:768px) {
+
+  .title {
+
+    font-size: 8px;
+    margin-left: 25px; /* Remove a margem esquerda */
+    margin-right: 0; /* Remove a margem direita */
+    font-family: "cebo";
+    margin-top: 1px;
+
+  }
+
+  .buttonstart {
+  
+    margin-left: 1100px; /* Adiciona margem à direita do botão */
+  
+  }
+
+}
+
 /* Estilos para a logo */
 .logo {
   margin-left: 20px; /* Adicione margem direita para afastar a logo da borda */
@@ -180,14 +200,15 @@ body, html {
 
 /* Estilos para os círculos */
 .circle {
-  width: 180px; /* Aumente o tamanho do círculo */
-  height: 180px; /* Aumente o tamanho do círculo */
+  width: 220px; /* Aumente o tamanho do círculo */
+  height: 220px; /* Aumente o tamanho do círculo */
   background-color: #e9e9e9;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto; /* Centraliza horizontalmente */
+ 
 }
 
 .circle img {
@@ -211,7 +232,7 @@ body, html {
 
 /* Estilos para os subtítulos */
 .image-container h3 {
-  margin-top: 15px; /* Aumenta a margem superior */
+  margin-top: 30px; /* Aumenta a margem superior */
   font-size: 20px;
   font-family: 'Microsoft JhengHei', sans-serif; /* Aplicando a fonte */
 }
