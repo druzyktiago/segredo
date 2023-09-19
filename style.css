@@ -134,7 +134,7 @@ body, html {
   margin-top: 1px;
 }
 
-@media (min-width: 900px) and (max-width:1440px) {
+@media (max-width:1440px) {
 
   .title {
 
@@ -153,11 +153,11 @@ body, html {
   }
 
 }
-@media (max-width:1240px) {
+@media (min-width: 800px) and (max-width:1220px) {
 
   .title {
 
-    font-size: 9px;
+    font-size: 12px;
     margin-left: 25px; /* Remove a margem esquerda */
     margin-right: 0; /* Remove a margem direita */
     font-family: "cebo";
@@ -167,7 +167,7 @@ body, html {
 
   .buttonstart {
   
-    margin-left: 700px; /* Adiciona margem à direita do botão */
+    margin-left: 830px; /* Adiciona margem à direita do botão */
   
   }
 
