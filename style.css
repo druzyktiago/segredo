@@ -134,25 +134,7 @@ body, html {
   margin-top: 1px;
 }
 
-@media (max-width: 800px) {
 
-  .title {
-
-    font-size: 9px;
-    margin-left: 25px; /* Remove a margem esquerda */
-    margin-right: 0; /* Remove a margem direita */
-    font-family: "cebo";
-    margin-top: 1px;
-
-  }
-
-  .buttonstart {
-  
-    margin-left: 780px; /* Adiciona margem à direita do botão */
-  
-  }
-
-}
 @media (min-width: 1300px) and (max-width: 1440px) {
 
   .title {
