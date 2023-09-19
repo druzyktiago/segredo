@@ -139,7 +139,7 @@ body, html {
 
   .title {
 
-    font-size: 9px;
+    font-size: 11px;
     margin-left: 25px; /* Remove a margem esquerda */
     margin-right: 0; /* Remove a margem direita */
     font-family: "cebo";
@@ -149,7 +149,7 @@ body, html {
 
   .buttonstart {
   
-    margin-left: 840px; /* Adiciona margem à direita do botão */
+    margin-left: 860px; /* Adiciona margem à direita do botão */
   
   }
 
@@ -169,7 +169,7 @@ body, html {
 
   .buttonstart {
   
-    margin-left: 718px; /* Adiciona margem à direita do botão */
+    margin-left: 719px; /* Adiciona margem à direita do botão */
   
   }
 
