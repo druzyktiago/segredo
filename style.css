@@ -134,7 +134,7 @@ body, html {
   margin-top: 1px;
 }
 
-@media (max-width:1440px) {
+@media (max-width:950px) {
 
   .title {
 
@@ -153,7 +153,7 @@ body, html {
   }
 
 }
-@media (min-width: 800px) and (max-width:1220px) {
+@media (max-width:900px) {
 
   .title {
 
@@ -167,7 +167,7 @@ body, html {
 
   .buttonstart {
   
-    margin-left: 830px; /* Adiciona margem à direita do botão */
+    margin-left: 700px; /* Adiciona margem à direita do botão */
   
   }
 
