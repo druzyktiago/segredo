@@ -162,6 +162,13 @@ body, html {
 
 }
 
+.image-container p {
+
+
+font-size: 14px;
+
+}
+
 }
 
 @media (max-width: 1280px) {
@@ -189,8 +196,15 @@ body, html {
   
   }
 
-}
+  .image-container p {
 
+
+    font-size: 14px;
+    
+    }
+    
+
+}
 
 }
 /* Estilos para a logo */
