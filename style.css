@@ -134,11 +134,11 @@ body, html {
   margin-top: 1px;
 }
 
-@media (max-width:950px) {
+@media (max-width: 800px) {
 
   .title {
 
-    font-size: 12px;
+    font-size: 9px;
     margin-left: 25px; /* Remove a margem esquerda */
     margin-right: 0; /* Remove a margem direita */
     font-family: "cebo";
@@ -148,16 +148,16 @@ body, html {
 
   .buttonstart {
   
-    margin-left: 830px; /* Adiciona margem à direita do botão */
+    margin-left: 780px; /* Adiciona margem à direita do botão */
   
   }
 
 }
-@media (max-width:900px) {
+@media (min-width: 900px) and (max-width: 950px) {
 
   .title {
 
-    font-size: 12px;
+    font-size: 10px;
     margin-left: 25px; /* Remove a margem esquerda */
     margin-right: 0; /* Remove a margem direita */
     font-family: "cebo";
@@ -167,7 +167,7 @@ body, html {
 
   .buttonstart {
   
-    margin-left: 700px; /* Adiciona margem à direita do botão */
+    margin-left: 820px; /* Adiciona margem à direita do botão */
   
   }
 
