@@ -153,6 +153,15 @@ body, html {
   
   }
 
+/* Estilos para os círculos */
+
+.circle {
+
+  width: 180px; /* Aumente o tamanho do círculo */
+  height: 180px; /* Aumente o tamanho do círculo */
+
+}
+
 }
 
 @media (max-width: 1280px) {
@@ -173,7 +182,15 @@ body, html {
   
   }
 
+  .circle {
+
+    width: 180px; /* Aumente o tamanho do círculo */
+    height: 180px; /* Aumente o tamanho do círculo */
+  
+  }
+
 }
+
 
 }
 /* Estilos para a logo */
