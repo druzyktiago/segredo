@@ -134,7 +134,7 @@ body, html {
   margin-top: 1px;
 }
 
-@media (min-width: 500px) and (max-width:768px) {
+@media (min-width: 900px) and (max-width:1440px) {
 
   .title {
 
