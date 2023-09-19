@@ -135,7 +135,7 @@ body, html {
 }
 
 
-@media (min-width: 1340px) and (max-width: 1440px) {
+@media (max-width: 1440px) {
 
   .title {
 
@@ -155,7 +155,7 @@ body, html {
 
 }
 
-@media (min-width: 800px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
 
   .title {
 
