@@ -73,17 +73,17 @@ body, html {
   }
 
 
-.inicio {
-  background-color: #3a3a3a;
-  color: #ffffff;
-  padding: 1px;
-  display: flex;
-  align-items: center;
-  top: 0px;
-  left: 0px;
-  overflow: hidden; /* Adicione o overflow hidden apenas aqui */
-  
-}
+  .inicio {
+    background: linear-gradient(-45deg, #ffffff, #333); /* Gradiente de branco para laranja */
+    color: #ffffff;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    border-radius: 0px;
+  }
 
 .buttonstart {
   border: 2px solid #d8c200; /* Define a borda vermelha */
