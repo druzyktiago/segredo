@@ -74,7 +74,7 @@ body, html {
 
 
   .inicio {
-    background: linear-gradient(-45deg, #ffffff, #333); /* Gradiente de branco para laranja */
+    background: #333; /* Gradiente de branco para laranja */
     color: #ffffff;
     padding: 1px;
     display: flex;
